@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <!-- FontAwesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 sticky left-0 top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-6">
+            <a href="#"  class="w-52 block logo"><img src="assets/logo.svg.png"
+                    alt="logo" class="w-full"></a>
+            <div class="options flex justify-between items-center">
+                <i class="fa-solid fa-bars burger pr-4 sm:hidden cursor-pointer transition-all hover:text-white"></i>
+                <ul class="links pr-4 font-medium hidden sm:flex">
+                    <li><a class="p-4 transition-all hover:text-white text-lg" href="#">Home</a></li>
+                    <li><a class="p-4 transition-all hover:text-white text-lg" href="#feat">Features</a></li>
+                    <li><a class="p-4 transition-all hover:text-white text-lg" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li><a class="p-4 transition-all hover:text-white text-lg" href="#footer">Social</a></li>
+                </ul>
+                <i
+                    class="fa-solid fa-sun darkBtn pl-4 border-l-2 border-black border-solid cursor-pointer transition-all hover:text-white"></i>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Landing -->
+    <div class="landing pt-14 pb-4 ">
+        <div class="dark:text-white container mx-auto flex flex-col-reverse sm:flex-row justify-between items-center gap-8">
+            <div class="info grow max-w-2xl text-center sm:text-start">
+                <h2 class="text-3xl lg:text-6xl font-bold mb-4">Rapidly build modern websites without ever leaving your
+                    HTML.</h2>
+                <p class="text-md lg:text-lg mb-4">A utility-first CSS framework packed with classes like flex, pt-4,
+                    text-center and
+                    rotate-90 that can
+                    be composed to build any design, directly in your markup.</p>
+                <a href="#" 
+                    class="mx-auto sm:mx-0 block rounded-full bg-blue-500 w-fit py-2 px-4 text-white transition-all hover:bg-blue-600">Get
+                    Started</a>
+            </div>
+            <img src="assets/learning.svg" alt="learning" class="block w-1/2 learning">
+        </div>
+        <a href="#feat" class="w-fit block mx-auto"><i
+                class="fa-solid fa-arrow-down cursor-pointer w-8 h-8 scale-125 transition-all arrow bg-blue-500 rounded-full border-2 border-gray-500 border-solid flex justify-center items-center text-white animate-bounce"></i></a>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start Features Section -->
+    <div class="feat lg:p-28 pt-28 bg-white" id="feat">
+        <div class="heading text-center w-fit mx-auto bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500">
+            <h2 class="text-6xl font-bold mb-2">Features</h2>
+            <p class="mb-8 text-xl">Check Out Our Hover Effects</p>
+        </div>
+        <div class="container group grid grid-cols-3 mx-auto gap-2 md:gap-4 hover:blur-none">
+            <img src="assets/features-01.jpg" alt=""
+                class="col-span-1 w-full h-40 md:h-56 lg:h-72 rounded-lg group-hover:scale-110 group-hover:-rotate-6 ">
+            <img src="assets/features-05.jpg" alt=""
+                class="col-span-2 w-full h-40 md:h-56 lg:h-72 rounded-lg group-hover:translate-x-16 group-hover:translate-y-10">
+            <img src="assets/features-02.jpg" alt=""
+                class="col-span-1 w-full h-40 md:h-56 lg:h-72 rounded-lg group-hover:translate-y-8 group-hover:-translate-x-4">
+            <img src="assets/features-03.jpg" alt=""
+                class="col-span-1 w-full h-40 md:h-56 lg:h-72 rounded-lg group-hover:translate-y-16">
+            <img src="assets/features-04.jpg" alt=""
+                class="col-span-1 w-full h-40 md:h-56 lg:h-72 rounded-lg group-hover:translate-y-10 group-hover:rotate-6 group-hover:scale-75">
+        </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Start Testimonials -->
+    <div class="testimonials pt-28" id="testimonials">
+        <div class="container mx-auto">
+            <div class="heading text-center w-fit mx-auto bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500">
+                <h2 class="text-6xl font-bold mb-2">“Best practices” don't actually work.</h2>
+                <p class="mb-8 text-xl">I've written a few thousand words on why traditional “semantic class names” are
+                    the
+                    reason CSS is hard to maintain, but the truth is you're never going to believe me until you actually
+                    try
+                    it.
+                    If you can suppress the urge to retch long enough to give it a chance, I really think you'll wonder
+                    how
+                    you
+                    ever worked with CSS any other way.</p>
+                <p class="text-xl">Adam Wathan</p>
+            </div>
+            <div class="content grid md:grid-cols-2 xl:grid-cols-3 gap-8"></div>
+        </div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Footer -->
+    <div class="footer pt-28 text-white" id="footer">
+        <div class="tailwindUI mx-auto bg-blue-500 flex flex-col sm:flex-row gap-4 justify-between items-center p-8">
+            <h2 class="text-white font-bold text-2xl">Move even faster with Tailwind UI</h2>
+            <a href="#"
+                class="block rounded-full bg-white text-blue-500 w-fit py-2 px-4 transition-all hover:bg-gray-300">Start
+                Here</a>
+        </div>
+        <div class="content p-10 bg-blue-950">
+            <div class="up grid gap-8 lg:grid-cols-3 grid-cols-1">
+                <div class="copyright place-self-center lg:place-self-auto">
+                    <p>Copyright &copy; 2025, All Rights Reserved</p>
+                    <a class="w-52 my-6 block" href="#" ><img src="assets/logo.svg.png" alt="logo"></a>
+                </div>
+                <div class="modals place-self-center lg:place-self-auto text-center flex justify-center gap-14">
+                    <div class="row1 flex flex-col gap-4">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </div>
+                    <div class="row2 flex flex-col gap-4">
+                        <a href="">Imprint</a>
+                        <a href="">Privacy</a>
+                        <a href="">Credits</a>
+                    </div>
+                </div>
+                <div class="form place-self-center lg:place-self-auto flex items-center justify-end gap-4">
+                    <input type="text" class="text-black px-4 py-1 rounded-full border-none outline-none">
+                    <button class="transition-all hover:bg-blue-600 bg-blue-500 text-white rounded-full px-3 py-1">Go</button>
+                </div>
+            </div>
+            <div class="bottom flex items-center justify-between mt-8">
+                <div class="icons flex gap-3">
+                    <i class="text-2xl cursor-pointer fa-brands fa-square-facebook"></i>
+                    <i class="text-2xl cursor-pointer fa-brands fa-instagram"></i>
+                    <i class="text-2xl cursor-pointer fa-brands fa-youtube"></i>
+                    <i class="text-2xl cursor-pointer fa-brands fa-linkedin-in"></i>
+                    <i class="text-2xl cursor-pointer fa-brands fa-x-twitter"></i>
+                </div>
+                <p>Copyright &copy; 2025, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="main.js"></script>
+</body>
+
+</html>
